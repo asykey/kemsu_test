@@ -15,4 +15,4 @@ use App\Http\Controllers\SiteController;
 */
 
 Route::get('/', [SiteController::class, 'create']);
-Route::post('/', [SiteController::class, 'store']);
+Route::post('/', [SiteController::class, 'store'])->middleware('throttle:90,1');
