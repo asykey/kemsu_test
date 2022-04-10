@@ -34,7 +34,7 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 mt-3">Отправить</button>
+                <button type="submit" class="btn btn-primary w-100 mt-3">Сохранить</button>
             </form>
             @if ($errors->any())
                 <div class="alert alert-danger">
