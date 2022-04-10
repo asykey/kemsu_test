@@ -22,5 +22,6 @@ class SiteController extends Controller
         $uuid = (string)Str::uuid();
         $data = "\xEF\xBB\xBF" . "$uuid;$request->name;$request->weight;$request->color";
         Storage::append('csv/data.csv', $data);
+        return redirect('/')->with('message', 'Запись успешно сохранена с ID '. $uuid);
     }
 }
