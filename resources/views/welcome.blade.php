@@ -33,7 +33,7 @@
                     </select>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 mt-3">Войти</button>
+                <button type="submit" class="btn btn-primary w-100 mt-3">Отправить</button>
             </form>
         </div>
     </div>
