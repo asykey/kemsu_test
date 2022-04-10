@@ -15,10 +15,11 @@
 
         <div class="col border rounded p-4">
             <h3 class="text-center mb-4">Добавить элемент</h3>
-            <form>
+            <form method="post" action="/">
+                @csrf
                 <div class="form-group">
                     <label for="name">Название</label>
-                    <input type="text" name=name" class="form-control">
+                    <input type="text" name="name" class="form-control">
                 </div>
                 <div class="form-group">
                     <label for="weight">Вес</label>
@@ -35,6 +36,15 @@
 
                 <button type="submit" class="btn btn-primary w-100 mt-3">Отправить</button>
             </form>
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
         </div>
     </div>
 </div>
