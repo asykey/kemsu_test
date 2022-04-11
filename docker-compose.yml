@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+    nginx:
+        build:
+            context: .
+            dockerfile: docker/nginx/Dockerfile
+        ports:
+            -   8080:80
+        links:
+            -   fpm
+        volumes:
+            - ./:/var/www/kemsu
+    fpm:
+        build:
+            context: .
+            dockerfile: docker/fpm/Dockerfile
+        volumes:
+            -   ./:/var/www/kemsu
+
