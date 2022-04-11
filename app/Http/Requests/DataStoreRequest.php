@@ -27,7 +27,7 @@ class DataStoreRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'min:3', 'max:120'],
             'weight' => ['nullable', 'integer'],
-            'color' => ['required', Rule::in(['red', 'green', 'blue'])]
+            'color' => ['required', Rule::in(['Красный', 'Зеленый', 'Синий'])]
         ];
     }
 

@@ -29,9 +29,9 @@
                 <div class="form-group">
                     <label for="color">Цвет</label>
                     <select name="color" class="form-select" aria-label="Default select example">
-                        <option value="red">Красный</option>
-                        <option value="green">Зеленый</option>
-                        <option value="blue">Синий</option>
+                        <option value="Красный">Красный</option>
+                        <option value="Зеленый">Зеленый</option>
+                        <option value="Синий">Синий</option>
                     </select>
                 </div>
 
